@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.hero-page-main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-page-main .row-1 {
+  position: relative;
+  height: 95%;
+  width: 100%;
+}
+
+.hero-page-main .row-1 .info-column {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-page-main .row-1 .info-column .hero-header {
+  position: relative;
+  top: 20%;
+  color: black;
+  font-size: 50px;
+}
+
+.hero-page-main .row-1 .info-column .hero-paragraph {
+  position: relative;
+  top: 20%;
+  color: black;
+  text-align: center;
+  padding: 20px 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.hero-page-main .row-1 .work-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.hero-page-main .row-1 .work-container .svg-container {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  top: 10%;
+  background: none;
+}
+
+.hero-page-main .row-1 .work-container .workh1 {
+  position: relative;
+  top: 10%;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+/*# sourceMappingURL=landingpage.css.map */

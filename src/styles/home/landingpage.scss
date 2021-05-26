@@ -1,0 +1,63 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+$font1: "Fjalla One", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$font2: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+$font3: "Pacifico", cursive;
+.hero-page-main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: whitesmoke;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  .row-1 {
+    position: relative;
+    height: 95%;
+    width: 100%;
+    .info-column {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .hero-header {
+        position: relative;
+        top: 20%;
+        color: black;
+        font-size: 50px;
+      }
+      .hero-paragraph {
+        position: relative;
+        top: 20%;
+        color: black;
+        text-align: center;
+        padding: 20px 50px;
+        font-family: $font2;
+        font-size: 20px;
+      }
+    }
+    .work-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: none;
+      .svg-container {
+        position: relative;
+        height: 60%;
+        width: 100%;
+        top: 10%;
+        background: none;
+      }
+      .workh1 {
+        position: relative;
+        top: 10%;
+        font-family: $font1;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
