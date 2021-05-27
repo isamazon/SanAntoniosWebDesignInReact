@@ -19,8 +19,8 @@ function Nav() {
         <Link to="/" className="homepagelink">
           SAN ANTONIO'S WEB DESIGN
         </Link>
-        <Link to="/Login" className="loginlink">
-          Login
+        <Link to="" className="loginlink">
+          Give us a call
         </Link>
       </nav>
       <div className={click ? "side-menu-container" : "side-menu-closed"}>

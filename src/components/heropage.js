@@ -25,11 +25,14 @@ class heropage extends Component {
               <h1 className="hero-header">{this.state.heroheader}</h1>
               <p className="hero-paragraph">{this.state.heroparagraph}</p>
             </Col>
-            <Col xl={7} className="work-container">
+            <Col xl={7} className="work-col">
               <div className="svg-container">{this.state.mainsvg}</div>
               <h1 className="workh1">See some of our previous work</h1>
               <div className="carousel-container">
-                <Svgcarousel />
+                <Svgcarousel
+                  click1={() => this.setState({ mainsvg: SVG.Proj1 })}
+                  click2={() => this.setState({ mainsvg: SVG.Proj2 })}
+                />
               </div>
             </Col>
           </Row>
