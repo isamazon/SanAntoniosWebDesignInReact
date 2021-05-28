@@ -18,7 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="*">
-          <FourOhFour />
+          <FourOhFour />k
         </Route>
       </Switch>
     </div>

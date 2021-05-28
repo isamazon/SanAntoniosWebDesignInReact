@@ -329,4 +329,9 @@
             transform: translateY(0px);
   }
 }
+
+.homepage-2-container {
+  position: relative;
+  height: 100vh;
+}
 /*# sourceMappingURL=landingpage.css.map */

@@ -5,12 +5,24 @@ import "../styles/navbar.css";
 function Nav() {
   const [click, setClick] = useState(false);
 
+  // Active navbar stat
+  const [nav, setNav] = useState(false);
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const changeBackground = () => {
+    if (window.scrollY >= 1) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
   return (
     <div>
-      <nav className="nav-bar">
+      <nav className={nav ? "nav-bar nav-active" : "nav-bar"}>
         <AiOutlineMenu
           onClick={handleClick}
           className="menu-link"

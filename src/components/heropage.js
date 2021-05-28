@@ -16,6 +16,8 @@ class heropage extends Component {
       mainsvg: SVG.Mainsvg,
       worktitle: "",
       workdesc: "",
+      workbtn: "",
+      workbtnlink: "",
     };
   }
 
@@ -39,6 +41,7 @@ class heropage extends Component {
                 <Svgcarousel
                   click1={() => this.setState({ mainsvg: SVG.Proj1 })}
                   click2={() => this.setState({ mainsvg: SVG.Proj2 })}
+                  click3={() => this.setState({ mainsvg: SVG.Proj3 })}
                 />
               </div>
             </Col>

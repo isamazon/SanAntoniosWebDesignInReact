@@ -12,7 +12,7 @@ class Svgcarousel extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       pauseOnHover: true,
     };
     return (
@@ -23,7 +23,9 @@ class Svgcarousel extends Component {
         <div onClick={this.props.click2} className="svg-link">
           {SVG.Proj2small}
         </div>
-        <div className="svg-link">{SVG.Projsmall}</div>
+        <div onClick={this.props.click3} className="svg-link">
+          {SVG.Proj3small}
+        </div>
         <div className="svg-link">{SVG.Projsmall}</div>
         <div className="svg-link">{SVG.Projsmall}</div>
       </Slider>
