@@ -17,11 +17,11 @@ function Nav() {
           size="40px"
         />
         <Link to="/" className="homepagelink">
-          SAN ANTONIO'S WEB DESIGN
+          San Antonio's Web Design
         </Link>
-        <Link to="" className="loginlink">
+        {/* <Link to="" className="loginlink">
           Give us a call
-        </Link>
+        </Link> */}
       </nav>
       <div className={click ? "side-menu-container" : "side-menu-closed"}>
         <h1 onClick={handleClick} className="close-btn">

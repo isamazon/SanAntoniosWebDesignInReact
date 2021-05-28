@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .hero-page-main {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: whitesmoke;
+  background: url("../../assets/background1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +17,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-page-main {
+    height: 100vh;
+  }
+}
+
+.hero-page-main .background1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .hero-page-main .row-1 {
@@ -36,6 +52,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  background: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-page-main .row-1 .info-column {
+    height: 300px;
+  }
 }
 
 .hero-page-main .row-1 .info-column .hero-header {
@@ -43,7 +67,8 @@
   top: 20%;
   color: black;
   font-size: 50px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Knewave", cursive;
+  border-bottom: 2px solid black;
 }
 
 .hero-page-main .row-1 .info-column .hero-paragraph {
@@ -54,6 +79,31 @@
   padding: 20px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+}
+
+.hero-page-main .row-1 .info-column .work-cont {
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 400px;
+  top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-page-main .row-1 .info-column .work-cont .work-h1 {
+  position: relative;
+  top: 0%;
+  font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 .hero-page-main .row-1 .work-col {
@@ -72,6 +122,12 @@
   height: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .hero-page-main .row-1 .work-col {
+    height: 300px;
+  }
+}
+
 .hero-page-main .row-1 .work-col .svg-container {
   position: relative;
   height: 60%;
@@ -83,10 +139,12 @@
 .hero-page-main .row-1 .work-col .workh1 {
   position: relative;
   top: 10%;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Knewave", cursive;
   text-align: center;
   width: 100%;
+  color: white;
   background: none;
+  font-size: 30px;
 }
 
 .hero-page-main .row-1 .work-col .carousel-container {
@@ -110,10 +168,165 @@
   width: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .hero-page-main .row-1 .work-col .carousel-container .slider .svg-link:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+#frontwheel,
+#backwheel {
+  -webkit-animation: wheel 0.5s infinite linear;
+          animation: wheel 0.5s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#car1 {
+  -webkit-animation: carlefttoright 10s infinite linear;
+          animation: carlefttoright 10s infinite linear;
+}
+
+@-webkit-keyframes carlefttoright {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+}
+
+@keyframes carlefttoright {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+}
+
+@-webkit-keyframes wheel {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes wheel {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+#tree1 {
+  -webkit-animation: wavy 5s infinite ease-in-out;
+          animation: wavy 5s infinite ease-in-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#tree2 {
+  -webkit-animation: wavy 3s infinite ease-in-out;
+          animation: wavy 3s infinite ease-in-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#tree3 {
+  -webkit-animation: wavy 5s infinite linear;
+          animation: wavy 5s infinite linear;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes wavy {
+  0% {
+    -webkit-transform: skewX(-2deg);
+            transform: skewX(-2deg);
+  }
+  50% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(-2deg);
+            transform: skewX(-2deg);
+  }
+}
+
+@keyframes wavy {
+  0% {
+    -webkit-transform: skewX(-2deg);
+            transform: skewX(-2deg);
+  }
+  50% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  100% {
+    -webkit-transform: skewX(-2deg);
+            transform: skewX(-2deg);
+  }
+}
+
+#bird1,
+#bird4,
+#bird5 {
+  -webkit-animation: birdpulse 10s infinite linear;
+          animation: birdpulse 10s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#bird2,
+#bird3 {
+  -webkit-animation: birdpulse 15s infinite linear;
+          animation: birdpulse 15s infinite linear;
+}
+
+@-webkit-keyframes birdpulse {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes birdpulse {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=landingpage.css.map */

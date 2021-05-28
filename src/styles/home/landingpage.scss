@@ -1,6 +1,6 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-$font1: "Fjalla One", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+$font1: "Knewave", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $font2: "Roboto", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
@@ -9,10 +9,22 @@ $font3: "Pacifico", cursive;
   position: relative;
   height: 100vh;
   width: 100%;
-  background: whitesmoke;
+  background: url("../../assets/background1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  @media screen and (max-width: 1200px) {
+    height: 100vh;
+  }
+  .background1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
   .row-1 {
     position: relative;
     height: 95%;
@@ -23,12 +35,18 @@ $font3: "Pacifico", cursive;
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 100%;
+      background: none;
+      @media screen and (max-width: 1200px) {
+        height: 300px;
+      }
       .hero-header {
         position: relative;
         top: 20%;
         color: black;
         font-size: 50px;
         font-family: $font1;
+        border-bottom: 2px solid black;
       }
       .hero-paragraph {
         position: relative;
@@ -39,6 +57,22 @@ $font3: "Pacifico", cursive;
         font-family: $font2;
         font-size: 20px;
       }
+      .work-cont {
+        position: relative;
+        background: none;
+        width: 100%;
+        height: 400px;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .work-h1 {
+          position: relative;
+          top: 0%;
+          font-family: $font2;
+          color: black;
+        }
+      }
     }
     .work-col {
       position: relative;
@@ -47,6 +81,9 @@ $font3: "Pacifico", cursive;
       align-items: center;
       background: none;
       height: 100%;
+      @media screen and (max-width: 1200px) {
+        height: 300px;
+      }
       .svg-container {
         position: relative;
         height: 60%;
@@ -60,7 +97,9 @@ $font3: "Pacifico", cursive;
         font-family: $font1;
         text-align: center;
         width: 100%;
+        color: white;
         background: none;
+        font-size: 30px;
       }
       .carousel-container {
         position: relative;
@@ -79,6 +118,7 @@ $font3: "Pacifico", cursive;
             height: 100%;
             width: 100%;
             transition: 0.5s;
+            cursor: pointer;
             &:hover {
               transform: translateY(-5px);
             }
@@ -86,5 +126,78 @@ $font3: "Pacifico", cursive;
         }
       }
     }
+  }
+}
+
+// Car animations
+#frontwheel,
+#backwheel {
+  animation: wheel 0.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#car1 {
+  animation: carlefttoright 10s infinite linear;
+}
+@keyframes carlefttoright {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+// Project 2 tree animations
+#tree1 {
+  animation: wavy 5s infinite ease-in-out;
+  transform-origin: bottom;
+}
+#tree2 {
+  animation: wavy 3s infinite ease-in-out;
+  transform-origin: bottom;
+}
+#tree3 {
+  animation: wavy 5s infinite linear;
+  transform-origin: bottom;
+}
+
+@keyframes wavy {
+  0% {
+    transform: skewX(-2deg);
+  }
+  50% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(-2deg);
+  }
+}
+#bird1,
+#bird4,
+#bird5 {
+  animation: birdpulse 10s infinite linear;
+  transform-origin: center;
+}
+#bird2,
+#bird3 {
+  animation: birdpulse 15s infinite linear;
+}
+@keyframes birdpulse {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

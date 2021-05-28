@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
 .nav-bar {
   position: fixed;
   top: 0;
@@ -8,7 +9,7 @@
   z-index: 500;
   width: 100%;
   left: 0;
-  background: #003554;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +24,7 @@
 .nav-bar .menu-link {
   position: absolute;
   left: 20px;
-  color: white;
+  color: black;
   z-index: 10;
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -36,10 +37,11 @@
 
 .nav-bar .homepagelink {
   position: relative;
-  color: whitesmoke;
-  font-family: "Roboto", sans-serif;
+  color: black;
+  font-family: "Knewave", cursive;
   text-align: center;
   width: 500px;
+  letter-spacing: -2px;
   background-color: none;
   font-size: 30px;
   -webkit-transition: 0.5s;

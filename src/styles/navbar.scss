@@ -5,7 +5,8 @@ $font1: "Fjalla One", sans-serif;
 $font2: "Roboto", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 $font3: "Pacifico", cursive;
-
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+$font4: "Knewave", cursive;
 .nav-bar {
   position: fixed;
   top: 0;
@@ -13,14 +14,15 @@ $font3: "Pacifico", cursive;
   z-index: 500;
   width: 100%;
   left: 0;
-  background: #003554;
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
+
   .menu-link {
     position: absolute;
     left: 20px;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     transition: 0.5s;
@@ -30,10 +32,11 @@ $font3: "Pacifico", cursive;
   }
   .homepagelink {
     position: relative;
-    color: whitesmoke;
-    font-family: $font2;
+    color: black;
+    font-family: $font4;
     text-align: center;
     width: 500px;
+    letter-spacing: -2px;
     background-color: none;
     font-size: 30px;
     transition: 0.5s;

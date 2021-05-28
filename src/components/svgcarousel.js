@@ -11,9 +11,9 @@ class Svgcarousel extends Component {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 2000,
       pauseOnHover: true,
-      cssEase: "linear",
     };
     return (
       <Slider {...settings} className="slider">
