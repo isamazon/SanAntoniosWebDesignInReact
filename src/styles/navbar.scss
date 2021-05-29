@@ -22,7 +22,7 @@ $font4: "Knewave", cursive;
   .menu-link {
     position: absolute;
     left: 20px;
-    color: black;
+    color: white;
     z-index: 10;
     cursor: pointer;
     transition: 0.5s;
@@ -32,7 +32,7 @@ $font4: "Knewave", cursive;
   }
   .homepagelink {
     position: relative;
-    color: black;
+    color: white;
     font-family: $font4;
     text-align: center;
     width: 500px;
@@ -68,6 +68,33 @@ $font4: "Knewave", cursive;
 .nav-active {
   background: white;
   box-shadow: 0px 1px 10px black;
+  .menu-link {
+    position: absolute;
+    left: 20px;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  .homepagelink {
+    position: relative;
+    color: black;
+    font-family: $font4;
+    text-align: center;
+    width: 500px;
+    letter-spacing: -2px;
+    background-color: none;
+    font-size: 30px;
+    transition: 0.5s;
+
+    &:hover {
+      text-decoration: none;
+      transform: translateY(-5px);
+    }
+  }
 }
 
 .side-menu-container,

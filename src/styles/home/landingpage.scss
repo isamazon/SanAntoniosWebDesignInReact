@@ -9,12 +9,13 @@ $font3: "Pacifico", cursive;
   position: relative;
   height: 100vh;
   width: 100%;
-  background: url("../../assets/background1.png");
+  background: url("../../assets/background2.png");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  z-index: 1;
   @media screen and (max-width: 1200px) {
     height: 100vh;
   }
@@ -43,19 +44,21 @@ $font3: "Pacifico", cursive;
       .hero-header {
         position: relative;
         top: 20%;
-        color: black;
+        color: white;
         font-size: 50px;
         font-family: $font1;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
+        animation: fadedown 2s;
       }
       .hero-paragraph {
         position: relative;
         top: 20%;
-        color: black;
+        color: white;
         text-align: center;
         padding: 20px 30px;
         font-family: $font2;
         font-size: 20px;
+        animation: fadeup 3s;
       }
       .work-cont {
         position: relative;
@@ -69,8 +72,28 @@ $font3: "Pacifico", cursive;
         .work-h1 {
           position: relative;
           top: 0%;
-          font-family: $font2;
-          color: black;
+          font-family: $font1;
+          color: white;
+          transition: 0.5s;
+        }
+        .work-desc {
+          color: white;
+        }
+        .work-link {
+          color: white;
+          font-family: 20px;
+          padding: 10px 40px;
+          border: 2px solid white;
+          border-radius: 20px;
+          transition: 0.5s;
+          &:hover {
+            text-decoration: none;
+            transform: translateY(-5px);
+            background: #2196f3;
+          }
+        }
+        .hidden {
+          display: none;
         }
       }
     }
@@ -90,6 +113,7 @@ $font3: "Pacifico", cursive;
         width: 100%;
         top: 5%;
         background: none;
+        animation: fadein 2s;
       }
       .workh1 {
         position: relative;
@@ -100,6 +124,7 @@ $font3: "Pacifico", cursive;
         color: white;
         background: none;
         font-size: 30px;
+        animation: fadein 2s;
       }
       .carousel-container {
         position: relative;
@@ -107,6 +132,7 @@ $font3: "Pacifico", cursive;
         top: 10%;
         width: 60%;
         height: 150px;
+        animation: fadein 2s;
         .slider {
           position: relative;
           width: 100%;
@@ -126,6 +152,37 @@ $font3: "Pacifico", cursive;
         }
       }
     }
+  }
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadedown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -201,9 +258,114 @@ $font3: "Pacifico", cursive;
     transform: translateY(0px);
   }
 }
+#heart5,
+#heart4,
+#heart3,
+#heart2,
+#heart1 {
+  animation: fadeinup 10s infinite linear;
+}
+
+#plant {
+  animation: wavy2 5s infinite;
+  transform-origin: bottom;
+}
+
+@keyframes wavy2 {
+  0% {
+    transform: skewX(-5deg);
+  }
+  50% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(-5deg);
+  }
+}
+
+@keyframes fadeinup {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-29px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
 
 // Second Home page
 .homepage-2-container {
   position: relative;
   height: 100vh;
+  background: #2a2a72;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  .circle1 {
+    position: absolute;
+    top: -10%;
+    left: -20%;
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    background: #2195f356;
+  }
+  .circle2 {
+    position: absolute;
+    bottom: 5%;
+    right: -20%;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: rgb(0, 159, 253);
+    background: linear-gradient(
+      133deg,
+      rgba(0, 159, 253, 1) 0%,
+      rgba(42, 42, 114, 1) 100%
+    );
+    animation: wheel 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .homepage-2-row {
+    position: relative;
+    height: 50%;
+    width: 95%;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .col-1,
+    .col-4 {
+      position: relative;
+      height: 100%;
+      background: red;
+    }
+    .col-2,
+    .col-3 {
+      position: relative;
+      height: 100%;
+      background: blue;
+    }
+  }
+}
+
+@keyframes spincircle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }

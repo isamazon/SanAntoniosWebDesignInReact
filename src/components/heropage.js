@@ -18,6 +18,7 @@ class heropage extends Component {
       workdesc: "",
       workbtn: "",
       workbtnlink: "",
+      workbtnclass: "hidden",
     };
   }
 
@@ -31,7 +32,16 @@ class heropage extends Component {
               <p className="hero-paragraph">{this.state.heroparagraph}</p>
               <div className="work-cont">
                 <h1 className="work-h1">{this.state.worktitle}</h1>
-                <p>{this.state.workdesc}</p>
+                <p className="work-desc" wa>
+                  {this.state.workdesc}
+                </p>
+                <a
+                  className={this.state.workbtnclass}
+                  href={this.state.workbtnlink}
+                  target="_blank"
+                >
+                  {this.state.workbtn}
+                </a>
               </div>
             </Col>
             <Col xl={7} md={12} className="work-col">
@@ -39,12 +49,37 @@ class heropage extends Component {
               <h1 className="workh1">Click below for previous work</h1>
               <div className="carousel-container">
                 <Svgcarousel
-                  click1={() => this.setState({ mainsvg: SVG.Proj1 })}
-                  click2={() => this.setState({ mainsvg: SVG.Proj2 })}
-                  click3={() => this.setState({ mainsvg: SVG.Proj3 })}
+                  click1={() =>
+                    this.setState({
+                      mainsvg: SVG.Proj1,
+                      worktitle: "Clear 2 learn",
+                      workbtn: "Visit here!",
+                      workbtnlink: "https://www.clear2learn.net/",
+                      workbtnclass: "work-link",
+                    })
+                  }
+                  click2={() =>
+                    this.setState({
+                      mainsvg: SVG.Proj2,
+                      worktitle: "Jerry's garage doors",
+                      workbtn: "Visit here!",
+                      workbtnlink: "https://jerrygaragedoors.com/",
+                      workbtnclass: "work-link",
+                    })
+                  }
+                  click3={() =>
+                    this.setState({
+                      mainsvg: SVG.Proj3,
+                      worktitle: "Ryan eiffert",
+                      workbtn: "Visit here!",
+                      workbtnlink: "https://ryanreiffert.com/",
+                      workbtnclass: "work-link",
+                    })
+                  }
                 />
               </div>
             </Col>
+            qq
           </Row>
         </Container>
       </div>
