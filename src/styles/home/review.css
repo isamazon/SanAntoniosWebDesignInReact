@@ -1,0 +1,116 @@
+.container-fld {
+  position: relative;
+  height: 100vh;
+  background: #2a2a72;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: hidden;
+}
+
+.container-fld .review-row {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fld .review-row .col-1 {
+  position: relative;
+  background: none;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fld .review-row .col-1 .review-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 50%;
+  background: none;
+}
+
+.container-fld .review-row .col-1 .review-text h1 {
+  color: white;
+}
+
+.container-fld .review-row .col-1 .review-text h1 span {
+  color: #2196f3;
+}
+
+.container-fld .review-row .col-1 .review-text p {
+  color: white;
+  text-align: center;
+  padding: 0px 100px;
+}
+
+.container-fld .review-row .review-col {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0%;
+}
+
+.container-fld .review-row .review-col .slider-2 {
+  position: relative;
+  height: 350px;
+  width: 90%;
+  background: none;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt {
+  position: relative;
+  background: none;
+  height: 350px;
+  width: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  left: 5%;
+  background: whitesmoke;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=review.css.map */

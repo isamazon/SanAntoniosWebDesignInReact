@@ -1,0 +1,76 @@
+.container-fld {
+  position: relative;
+  height: 100vh;
+  background: #2a2a72;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  .review-row {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .col-1 {
+      position: relative;
+      background: none;
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .review-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        background: none;
+        h1 {
+          color: white;
+          span {
+            color: #2196f3;
+          }
+        }
+        p {
+          color: white;
+          text-align: center;
+          padding: 0px 100px;
+        }
+      }
+    }
+    .review-col {
+      position: relative;
+      height: 60%;
+      width: 100%;
+      background: none;
+      display: flex;
+      justify-content: center;
+      top: 0%;
+      .slider-2 {
+        position: relative;
+        height: 350px;
+        width: 90%;
+        background: none;
+        .review-cnt {
+          position: relative;
+          background: none;
+          height: 350px;
+          width: 100%;
+          background: none;
+          display: flex;
+          justify-content: center;
+          .inner-cnt {
+            position: relative;
+            height: 100%;
+            width: 90%;
+            left: 5%;
+            background: whitesmoke;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 10px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}

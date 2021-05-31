@@ -207,11 +207,19 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  background: none;
 }
 
 .hero-page-main .row-1 .work-col .carousel-container .slider .svg-link:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.hero-page-main .row-1 .work-col .carousel-container .slider .link-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: whitesmoke;
 }
 
 @-webkit-keyframes fadeup {

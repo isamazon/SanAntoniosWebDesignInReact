@@ -145,9 +145,16 @@ $font3: "Pacifico", cursive;
             width: 100%;
             transition: 0.5s;
             cursor: pointer;
+            background: none;
             &:hover {
               transform: translateY(-5px);
             }
+          }
+          .link-box {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background: whitesmoke;
           }
         }
       }
@@ -476,6 +483,7 @@ $font3: "Pacifico", cursive;
   animation: floatup 5s infinite ease-in-out;
 }
 // Maintenance
+
 @keyframes floatup {
   0% {
     transform: translateY(0px);

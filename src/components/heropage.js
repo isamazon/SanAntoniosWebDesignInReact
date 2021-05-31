@@ -79,7 +79,6 @@ class heropage extends Component {
                 />
               </div>
             </Col>
-            qq
           </Row>
         </Container>
       </div>

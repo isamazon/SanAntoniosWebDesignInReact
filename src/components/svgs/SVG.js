@@ -12,6 +12,7 @@ import SEO from "./seo";
 import Design from "./design";
 import Appdev from "./appdev";
 import Clean from "./clean";
+import Finance from "./finance";
 const SVG = {
   Mainsvg: <Mainsvg height="100%" width="100%" />,
   Proj1: <Proj1 height="100%" width="100%" />,
@@ -25,5 +26,6 @@ const SVG = {
   Design: <Design height="100%" width="100%" />,
   Appdev: <Appdev height="100%" width="100%" />,
   Clean: <Clean height="100%" width="100%" />,
+  Finance: <Finance height="100%" width="100%" />,
 };
 export default SVG;
