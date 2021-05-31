@@ -1,8 +1,8 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
 $font1: "Knewave", cursive;
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-$font2: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+$font2: "Rubik", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 $font3: "Pacifico", cursive;
 .hero-page-main {
@@ -377,18 +377,24 @@ $font3: "Pacifico", cursive;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: none;
+        background: rgba(0, 0, 0, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
         h1 {
           color: white;
-          font-family: $font1;
+          font-family: $font2;
           font-size: 50px;
-          letter-spacing: 10px;
-          text-shadow: 0px 1px 10px black;
+          text-transform: uppercase;
+          padding: 20px 0px;
         }
         p {
           color: white;
           text-align: center;
-          padding: 0px 50px;
+          padding: 0px 80px;
           font-size: 20px;
           font-family: $font2;
         }
@@ -406,18 +412,24 @@ $font3: "Pacifico", cursive;
   }
 }
 
+// Hosting
 #innerhost1 {
   animation: spincircle 5s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }
-#search1 {
+
+// SEO
+#search1,
+#line1 {
   animation: fadeout 5s infinite 1s;
 }
-#search2 {
+#search2,
+#line2 {
   animation: fadeout 5s infinite 2s;
 }
-#search3 {
+#search3,
+#line3 {
   animation: fadeout 5s infinite 3s;
 }
 #search4 {
@@ -427,6 +439,97 @@ $font3: "Pacifico", cursive;
   animation: rotatesubtle 20s infinite;
   transform-origin: center;
   transform-box: fill-box;
+}
+
+// WEB DESIGN
+#profile3,
+#crosscontainer {
+  animation: right2left 15s infinite;
+}
+#profile2 {
+  animation: right2left 9s infinite;
+}
+#cross {
+  animation: spincircle 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#dots1 {
+  animation: fadeout 8s infinite;
+}
+#dots2 {
+  animation: fadeout 5s infinite;
+}
+#profile4 {
+  animation: up2down 10s infinite;
+}
+#arrowleft {
+  animation: left2right 2s infinite ease-in-out;
+}
+#arrowright {
+  animation: right2left2 2s infinite ease-in-out;
+}
+#profile1 {
+  animation: right2left 10s infinite ease-in-out;
+}
+#phone {
+  animation: floatup 5s infinite ease-in-out;
+}
+// Maintenance
+@keyframes floatup {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes right2left {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes left2right {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes right2left2 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes up2down {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 @keyframes fadeout {
   0% {
@@ -442,6 +545,7 @@ $font3: "Pacifico", cursive;
     transform: translateY(0px);
   }
 }
+
 @keyframes spincircle {
   from {
     transform: rotateZ(0deg);

@@ -9,6 +9,9 @@ import Proj3 from "./proj3";
 import Proj3small from "./proj3small";
 import Hosting from "./hosting";
 import SEO from "./seo";
+import Design from "./design";
+import Appdev from "./appdev";
+import Clean from "./clean";
 const SVG = {
   Mainsvg: <Mainsvg height="100%" width="100%" />,
   Proj1: <Proj1 height="100%" width="100%" />,
@@ -19,5 +22,8 @@ const SVG = {
   Proj3small: <Proj3small height="100%" width="100%" />,
   Hosting: <Hosting height="100%" width="100%" />,
   SEO: <SEO height="80%" width="100%" />,
+  Design: <Design height="100%" width="100%" />,
+  Appdev: <Appdev height="100%" width="100%" />,
+  Clean: <Clean height="100%" width="100%" />,
 };
 export default SVG;

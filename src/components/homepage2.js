@@ -42,7 +42,7 @@ function Homepage2(props) {
             md={12}
             className="col-2"
             data-aos="fade-left"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
           >
             {props.svg1}
           </Col>

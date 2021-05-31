@@ -136,7 +136,7 @@
           justify-content: center;
   z-index: 600;
   height: 100vh;
-  background: #006494;
+  background: #2a2a72;
   -webkit-box-shadow: 5px 0px 100px black;
           box-shadow: 5px 0px 100px black;
   -webkit-animation: slidein 0.5s;
@@ -155,7 +155,7 @@
   position: absolute;
   top: 0%;
   margin: 20px 0px;
-  color: #ade8f4;
+  color: #5cc9ff;
   font-family: "Fjalla One", sans-serif;
   font-size: 60px;
   border-bottom: 2px solid #00a6fb;
@@ -175,7 +175,7 @@
 
 .side-menu-container .menu-link-1,
 .side-menu-closed .menu-link-1 {
-  color: #ade8f4;
+  color: #00a6fb;
   font-size: 25px;
   height: 100px;
   display: -webkit-box;
@@ -190,7 +190,7 @@
   text-align: center;
   font-family: "Fjalla One", sans-serif;
   width: 100%;
-  background: #005177;
+  background: #262669;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -198,7 +198,7 @@
 .side-menu-container .menu-link-1:hover,
 .side-menu-closed .menu-link-1:hover {
   text-decoration: none;
-  background: #003554;
+  background: #1c1c4d;
 }
 
 .side-menu-closed {

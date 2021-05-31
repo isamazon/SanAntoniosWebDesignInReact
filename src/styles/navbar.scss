@@ -108,7 +108,7 @@ $font4: "Knewave", cursive;
   justify-content: center;
   z-index: 600;
   height: 100vh;
-  background: #006494;
+  background: #2a2a72;
   box-shadow: 5px 0px 100px black;
   animation: slidein 0.5s;
 
@@ -119,7 +119,7 @@ $font4: "Knewave", cursive;
     position: absolute;
     top: 0%;
     margin: 20px 0px;
-    color: #ade8f4;
+    color: #5cc9ff;
     font-family: $font1;
     font-size: 60px;
     border-bottom: 2px solid #00a6fb;
@@ -135,7 +135,7 @@ $font4: "Knewave", cursive;
     color: white;
   }
   .menu-link-1 {
-    color: #ade8f4;
+    color: #00a6fb;
     font-size: 25px;
     height: 100px;
     display: flex;
@@ -144,11 +144,11 @@ $font4: "Knewave", cursive;
     text-align: center;
     font-family: $font1;
     width: 100%;
-    background: #005177;
+    background: #262669;
     transition: 0.5s;
     &:hover {
       text-decoration: none;
-      background: #003554;
+      background: #1c1c4d;
     }
   }
 }
