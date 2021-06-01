@@ -15,8 +15,19 @@ function Homepage2(props) {
   return (
     <div>
       <Container className="homepage-2-container" fluid>
-        <div className={props.circle1}></div>
-        <div className={props.circle2}></div>
+        <div
+          className={props.circle1}
+          data-aos="flip-up"
+          data-aos-duration="5000"
+        ></div>
+        <div
+          className={props.circle2}
+          data-aos="fade-down"
+          data-aos-offset="500"
+          data-aos-duration="1000"
+        ></div>
+        <div className={props.circle3}></div>
+        <div className={props.circle4}></div>
         <div className="header">
           <h1
             className="services-h1"

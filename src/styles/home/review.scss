@@ -50,8 +50,27 @@ $font3: "Pacifico", cursive;
           color: white;
           text-align: center;
           padding: 0px 100px;
+
           @media screen and (max-width: 1000px) {
             padding: 0px 20px;
+          }
+        }
+        a {
+          color: white;
+          padding: 10px 50px;
+          border: 2px solid #2196f3;
+          border-radius: 20px;
+          cursor: pointer;
+          z-index: 10;
+          transition: 0.5s;
+          animation: bounce 1s infinite ease-in-out;
+          &:hover {
+            color: #2196f3;
+            text-decoration: none;
+            padding: 10px 100px;
+            background: none;
+            letter-spacing: 5px;
+            animation: none;
           }
         }
       }
@@ -109,6 +128,7 @@ $font3: "Pacifico", cursive;
                 padding: 0px 50px;
                 font-family: $font2;
                 text-align: center;
+
                 @media screen and (max-width: 1000px) {
                   font-size: 10px;
                 }
@@ -127,6 +147,7 @@ $font3: "Pacifico", cursive;
                 height: 50px;
                 width: 50px;
                 padding-left: 50px;
+                cursor: pointer;
               }
               .quoter-info {
                 position: absolute;
@@ -152,5 +173,17 @@ $font3: "Pacifico", cursive;
         }
       }
     }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

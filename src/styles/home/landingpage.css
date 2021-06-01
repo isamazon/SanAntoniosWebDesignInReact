@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 1200px) {
   .hero-page-main .row-1 .info-column {
-    height: 300px;
+    height: 400px;
   }
 }
 
@@ -80,6 +80,18 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .hero-page-main .row-1 .info-column .hero-header {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-page-main .row-1 .info-column .hero-header {
+    font-size: 20px;
+  }
+}
+
 .hero-page-main .row-1 .info-column .hero-paragraph {
   position: relative;
   top: 20%;
@@ -96,6 +108,14 @@
   .hero-page-main .row-1 .info-column .hero-paragraph {
     padding: 20px 0px;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-page-main .row-1 .info-column .hero-paragraph {
+    font-size: 15px;
+    padding: 0px 0px;
+    text-shadow: 0px 1px 10px black;
   }
 }
 
@@ -169,7 +189,7 @@
 
 @media screen and (max-width: 1200px) {
   .hero-page-main .row-1 .work-col {
-    height: 300px;
+    height: 400px;
   }
 }
 
@@ -574,32 +594,6 @@
           align-items: center;
 }
 
-.homepage-2-container .circle1 {
-  position: absolute;
-  top: -10%;
-  right: -10%;
-  height: 900px;
-  width: 900px;
-  border-radius: 50%;
-  background: #2195f325;
-}
-
-.homepage-2-container .circle2 {
-  position: absolute;
-  bottom: 5%;
-  left: -20%;
-  height: 600px;
-  width: 600px;
-  border-radius: 50%;
-  background: #009ffd;
-  background: linear-gradient(133deg, #009ffd 0%, #2a2a72 100%);
-  -webkit-animation: wheel 5s infinite linear;
-          animation: wheel 5s infinite linear;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  transform-box: fill-box;
-}
-
 .homepage-2-container .header {
   position: relative;
   background: none;
@@ -772,6 +766,118 @@
   .homepage-2-container .homepage-2-row .col-3 {
     height: 200px;
   }
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7,
+.circle8 {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.circle1 {
+  top: -10%;
+  right: -10%;
+  height: 900px;
+  width: 900px;
+  background: #2195f325;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: -20%;
+  height: 600px;
+  width: 600px;
+  background: #009ffd;
+  background: linear-gradient(133deg, #009ffd 0%, #2a2a72 100%);
+  -webkit-animation: wheel 5s infinite linear;
+          animation: wheel 5s infinite linear;
+}
+
+.circle3 {
+  bottom: 5%;
+  right: -20%;
+  height: 700px;
+  width: 700px;
+  background: #009ffd;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  background: linear-gradient(133deg, #009ffd 0%, #2a2a72 100%);
+  -webkit-animation: wheel 5s infinite linear;
+          animation: wheel 5s infinite linear;
+}
+
+.circle4 {
+  bottom: 25%;
+  right: 60%;
+  height: 500px;
+  width: 500px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: #0e6597;
+  background: linear-gradient(133deg, rgba(54, 180, 253, 0.925) 0%, #020269 100%);
+  -webkit-animation: wheel 10s infinite linear;
+          animation: wheel 10s infinite linear;
+}
+
+.circle5 {
+  bottom: 25%;
+  right: 40%;
+  height: 1000px;
+  width: 1000px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: #0e6597;
+  background: linear-gradient(133deg, rgba(54, 180, 253, 0.925) 0%, #020269 100%);
+  -webkit-animation: wheel 10s infinite linear;
+          animation: wheel 10s infinite linear;
+}
+
+.circle6 {
+  bottom: -50%;
+  right: -10%;
+  height: 1000px;
+  width: 1000px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: #0e6597;
+  background: linear-gradient(133deg, rgba(54, 180, 253, 0.925) 0%, #020269 100%);
+  -webkit-animation: wheel 10s infinite linear;
+          animation: wheel 10s infinite linear;
+}
+
+.circle7 {
+  top: -50%;
+  right: -10%;
+  height: 1000px;
+  width: 1000px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: #0e6597;
+  background: linear-gradient(133deg, rgba(54, 180, 253, 0.925) 0%, #020269 100%);
+  -webkit-animation: wheel 10s infinite linear;
+          animation: wheel 10s infinite linear;
+}
+
+.circle8 {
+  bottom: -50%;
+  left: -10%;
+  height: 1200px;
+  width: 1200px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  background: #00a2ff;
+  background: linear-gradient(150deg, rgba(0, 128, 202, 0.925) 0%, #3838d4 100%);
+  -webkit-animation: wheel 6s infinite linear;
+          animation: wheel 6s infinite linear;
 }
 
 #innerhost1 {

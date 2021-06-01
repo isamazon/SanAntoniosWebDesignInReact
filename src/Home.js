@@ -29,6 +29,8 @@ function Home() {
         </Slide>
         <Slide>
           <Homepage2
+            circle1="circle3"
+            circle2="circle4"
             svg1={SVG.Design}
             svg2={SVG.Appdev}
             firstserviceh1="Web design"
@@ -39,6 +41,8 @@ function Home() {
         </Slide>
         <Slide>
           <Homepage2
+            circle1="circle5"
+            circle2="circle6"
             svg1={SVG.Clean}
             svg2={SVG.Finance}
             firstserviceh1="MONTHLY MAINTENENCE"
@@ -47,12 +51,10 @@ function Home() {
             secondservicep="We're the most Affordable Web Design, App Development, and Marketing Company yet. We have partnered with Zip money, funding hero, and Paypal to offer you many different Affordable payment options so your business can strive no matter how big or small."
           />
         </Slide>
-        <Slide>
-          <Homepage3 />
-        </Slide>
+
         {/* GOOGLE MAPS PAGE */}
         <Slide>
-          <Mappage />
+          <Mappage circle1="circle7" circle2="circle8" />
         </Slide>
       </FullPage>
     </div>

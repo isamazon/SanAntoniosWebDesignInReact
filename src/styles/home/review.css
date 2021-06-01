@@ -85,6 +85,29 @@
   }
 }
 
+.container-fld .review-row .col-1 .review-text a {
+  color: white;
+  padding: 10px 50px;
+  border: 2px solid #2196f3;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: bounce 1s infinite ease-in-out;
+          animation: bounce 1s infinite ease-in-out;
+}
+
+.container-fld .review-row .col-1 .review-text a:hover {
+  color: #2196f3;
+  text-decoration: none;
+  padding: 10px 100px;
+  background: none;
+  letter-spacing: 5px;
+  -webkit-animation: none;
+          animation: none;
+}
+
 .container-fld .review-row .review-col {
   position: relative;
   height: 60%;
@@ -199,6 +222,7 @@
   height: 50px;
   width: 50px;
   padding-left: 50px;
+  cursor: pointer;
 }
 
 .container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box .quoter-info {
@@ -230,5 +254,35 @@
 .container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box .quoter-info .company-name {
   position: relative;
   bottom: 0;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=review.css.map */

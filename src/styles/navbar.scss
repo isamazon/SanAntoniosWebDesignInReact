@@ -40,7 +40,9 @@ $font4: "Knewave", cursive;
     background-color: none;
     font-size: 30px;
     transition: 0.5s;
-
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
     &:hover {
       text-decoration: none;
       transform: translateY(-5px);

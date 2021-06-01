@@ -14,12 +14,20 @@ function Homepage3() {
               <h1 data-aos="fade-down" data-aos-duration="1200">
                 WEB DESIGN <span>REVIEWS</span>
               </h1>
-              <p data-aos="fade-up" data-aos-duration="1200">
+              <p data-aos="fade-up" data-aos-duration="1500">
                 Talk is cheap, so just look at our reviews. Let our customers
                 tell you how awesome our services are, whether it's web app
                 development or E-commerce Development. San Antonio's Web Design
                 is here to stay and we want to make sure you are too!
               </p>
+              <a
+                href=""
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+              >
+                More reviews
+              </a>
             </div>
           </Col>
           <Col lg={12} className="review-col">

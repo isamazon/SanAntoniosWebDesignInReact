@@ -39,7 +39,7 @@ $font3: "Pacifico", cursive;
       height: 100%;
       background: none;
       @media screen and (max-width: 1200px) {
-        height: 300px;
+        height: 400px;
       }
       .hero-header {
         position: relative;
@@ -51,6 +51,12 @@ $font3: "Pacifico", cursive;
         animation: fadedown 2s;
         @media screen and (max-width: 710px) {
           font-size: 35px;
+        }
+        @media screen and (max-width: 520px) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: 420px) {
+          font-size: 20px;
         }
       }
       .hero-paragraph {
@@ -65,6 +71,11 @@ $font3: "Pacifico", cursive;
         @media screen and (max-width: 710px) {
           padding: 20px 0px;
           font-size: 15px;
+        }
+        @media screen and (max-width: 420px) {
+          font-size: 15px;
+          padding: 0px 0px;
+          text-shadow: 0px 1px 10px black;
         }
       }
       .work-cont {
@@ -112,7 +123,7 @@ $font3: "Pacifico", cursive;
       background: none;
       height: 100%;
       @media screen and (max-width: 1200px) {
-        height: 300px;
+        height: 400px;
       }
       .svg-container {
         position: relative;
@@ -325,32 +336,7 @@ $font3: "Pacifico", cursive;
   overflow-x: hidden;
   overflow-y: hidden;
   align-items: center;
-  .circle1 {
-    position: absolute;
-    top: -10%;
-    right: -10%;
-    height: 900px;
-    width: 900px;
-    border-radius: 50%;
-    background: #2195f325;
-  }
-  .circle2 {
-    position: absolute;
-    bottom: 5%;
-    left: -20%;
-    height: 600px;
-    width: 600px;
-    border-radius: 50%;
-    background: rgb(0, 159, 253);
-    background: linear-gradient(
-      133deg,
-      rgba(0, 159, 253, 1) 0%,
-      rgba(42, 42, 114, 1) 100%
-    );
-    animation: wheel 5s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-  }
+
   .header {
     position: relative;
     background: none;
@@ -449,6 +435,129 @@ $font3: "Pacifico", cursive;
       }
     }
   }
+}
+// Circles
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7,
+.circle8 {
+  position: absolute;
+  border-radius: 50%;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.circle1 {
+  top: -10%;
+  right: -10%;
+  height: 900px;
+  width: 900px;
+  background: #2195f325;
+}
+.circle2 {
+  bottom: 5%;
+  left: -20%;
+  height: 600px;
+  width: 600px;
+  background: rgb(0, 159, 253);
+  background: linear-gradient(
+    133deg,
+    rgba(0, 159, 253, 1) 0%,
+    rgba(42, 42, 114, 1) 100%
+  );
+  animation: wheel 5s infinite linear;
+}
+.circle3 {
+  bottom: 5%;
+  right: -20%;
+  height: 700px;
+  width: 700px;
+
+  background: rgb(0, 159, 253);
+  filter: blur(5px);
+  background: linear-gradient(
+    133deg,
+    rgba(0, 159, 253, 1) 0%,
+    rgba(42, 42, 114, 1) 100%
+  );
+  animation: wheel 5s infinite linear;
+}
+.circle4 {
+  bottom: 25%;
+  right: 60%;
+  height: 500px;
+  width: 500px;
+
+  filter: blur(10px);
+  background: rgb(14, 101, 151);
+  background: linear-gradient(
+    133deg,
+    rgba(54, 180, 253, 0.925) 0%,
+    rgb(2, 2, 105) 100%
+  );
+  animation: wheel 10s infinite linear;
+}
+.circle5 {
+  bottom: 25%;
+  right: 40%;
+  height: 1000px;
+  width: 1000px;
+
+  filter: blur(10px);
+  background: rgb(14, 101, 151);
+  background: linear-gradient(
+    133deg,
+    rgba(54, 180, 253, 0.925) 0%,
+    rgb(2, 2, 105) 100%
+  );
+  animation: wheel 10s infinite linear;
+}
+.circle6 {
+  bottom: -50%;
+  right: -10%;
+  height: 1000px;
+  width: 1000px;
+
+  filter: blur(10px);
+  background: rgb(14, 101, 151);
+  background: linear-gradient(
+    133deg,
+    rgba(54, 180, 253, 0.925) 0%,
+    rgb(2, 2, 105) 100%
+  );
+  animation: wheel 10s infinite linear;
+}
+.circle7 {
+  top: -50%;
+  right: -10%;
+  height: 1000px;
+  width: 1000px;
+
+  filter: blur(10px);
+  background: rgb(14, 101, 151);
+  background: linear-gradient(
+    133deg,
+    rgba(54, 180, 253, 0.925) 0%,
+    rgb(2, 2, 105) 100%
+  );
+  animation: wheel 10s infinite linear;
+}
+.circle8 {
+  bottom: -50%;
+  left: -10%;
+  height: 1200px;
+  width: 1200px;
+  filter: blur(10px);
+  background: rgb(0, 162, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 128, 202, 0.925) 0%,
+    rgb(56, 56, 212) 100%
+  );
+  animation: wheel 6s infinite linear;
 }
 
 // Hosting
