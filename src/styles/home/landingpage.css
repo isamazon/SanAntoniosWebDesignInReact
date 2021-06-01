@@ -74,6 +74,12 @@
           animation: fadedown 2s;
 }
 
+@media screen and (max-width: 710px) {
+  .hero-page-main .row-1 .info-column .hero-header {
+    font-size: 35px;
+  }
+}
+
 .hero-page-main .row-1 .info-column .hero-paragraph {
   position: relative;
   top: 20%;
@@ -84,6 +90,13 @@
   font-size: 20px;
   -webkit-animation: fadeup 3s;
           animation: fadeup 3s;
+}
+
+@media screen and (max-width: 710px) {
+  .hero-page-main .row-1 .info-column .hero-paragraph {
+    padding: 20px 0px;
+    font-size: 15px;
+  }
 }
 
 .hero-page-main .row-1 .info-column .work-cont {
@@ -645,6 +658,26 @@
           align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .homepage-2-container .homepage-2-row .col-1,
+  .homepage-2-container .homepage-2-row .col-4 {
+    height: 200px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-2-container .homepage-2-row .col-1,
+  .homepage-2-container .homepage-2-row .col-4 {
+    height: 150px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .homepage-2-container .homepage-2-row .col-1 .desc-box,
 .homepage-2-container .homepage-2-row .col-4 .desc-box {
   position: relative;
@@ -678,6 +711,21 @@
   padding: 20px 0px;
 }
 
+@media screen and (max-width: 1200px) {
+  .homepage-2-container .homepage-2-row .col-1 .desc-box h1,
+  .homepage-2-container .homepage-2-row .col-4 .desc-box h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-2-container .homepage-2-row .col-1 .desc-box h1,
+  .homepage-2-container .homepage-2-row .col-4 .desc-box h1 {
+    font-size: 25px;
+    padding: 10px 0px;
+  }
+}
+
 .homepage-2-container .homepage-2-row .col-1 .desc-box p,
 .homepage-2-container .homepage-2-row .col-4 .desc-box p {
   color: white;
@@ -687,10 +735,26 @@
   font-family: "Rubik", sans-serif;
 }
 
+@media screen and (max-width: 1200px) {
+  .homepage-2-container .homepage-2-row .col-1 .desc-box p,
+  .homepage-2-container .homepage-2-row .col-4 .desc-box p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-2-container .homepage-2-row .col-1 .desc-box p,
+  .homepage-2-container .homepage-2-row .col-4 .desc-box p {
+    font-size: 10px;
+    padding: 0px 5px;
+  }
+}
+
 .homepage-2-container .homepage-2-row .col-2,
 .homepage-2-container .homepage-2-row .col-3 {
   position: relative;
   height: 100%;
+  width: 100%;
   background: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,6 +765,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .homepage-2-container .homepage-2-row .col-2,
+  .homepage-2-container .homepage-2-row .col-3 {
+    height: 200px;
+  }
 }
 
 #innerhost1 {

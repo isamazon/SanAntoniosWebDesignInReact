@@ -1,3 +1,11 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+$font1: "Knewave", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+$font2: "Rubik", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+$font3: "Pacifico", cursive;
+
 .container-fld {
   position: relative;
   height: 100vh;
@@ -25,8 +33,15 @@
         width: 50%;
         height: 50%;
         background: none;
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
         h1 {
+          position: relative;
           color: white;
+          width: 100%;
+          background: none;
+          text-align: center;
           span {
             color: #2196f3;
           }
@@ -35,6 +50,9 @@
           color: white;
           text-align: center;
           padding: 0px 100px;
+          @media screen and (max-width: 1000px) {
+            padding: 0px 20px;
+          }
         }
       }
     }
@@ -51,6 +69,9 @@
         height: 350px;
         width: 90%;
         background: none;
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
         .review-cnt {
           position: relative;
           background: none;
@@ -68,6 +89,65 @@
             box-shadow: 0px 0px 10px black;
             border-radius: 10px;
             transition: 0.5s;
+            .quote-box {
+              position: relative;
+              height: 40%;
+              width: 100%;
+              background: none;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              .sidebar {
+                position: relative;
+                height: 90%;
+                width: 20px;
+                left: 5%;
+                background: #2196f3;
+              }
+              p {
+                font-size: 20px;
+                padding: 0px 50px;
+                font-family: $font2;
+                text-align: center;
+                @media screen and (max-width: 1000px) {
+                  font-size: 10px;
+                }
+              }
+            }
+            .quoter-box {
+              position: relative;
+              height: 60%;
+              width: 100%;
+              background: none;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .profile-pic {
+                position: relative;
+                height: 50px;
+                width: 50px;
+                padding-left: 50px;
+              }
+              .quoter-info {
+                position: absolute;
+                height: 100%;
+                width: 80%;
+                right: 0%;
+                background: noen;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                .name {
+                  position: relative;
+                  color: #2196f3;
+                }
+                .company-name {
+                  position: relative;
+                  bottom: 0;
+                }
+              }
+            }
           }
         }
       }

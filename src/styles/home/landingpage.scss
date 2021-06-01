@@ -49,6 +49,9 @@ $font3: "Pacifico", cursive;
         font-family: $font1;
         border-bottom: 2px solid white;
         animation: fadedown 2s;
+        @media screen and (max-width: 710px) {
+          font-size: 35px;
+        }
       }
       .hero-paragraph {
         position: relative;
@@ -59,6 +62,10 @@ $font3: "Pacifico", cursive;
         font-family: $font2;
         font-size: 20px;
         animation: fadeup 3s;
+        @media screen and (max-width: 710px) {
+          padding: 20px 0px;
+          font-size: 15px;
+        }
       }
       .work-cont {
         position: relative;
@@ -377,7 +384,14 @@ $font3: "Pacifico", cursive;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-
+      @media screen and (max-width: 1200px) {
+        height: 200px;
+        order: 1;
+      }
+      @media screen and (max-width: 1000px) {
+        height: 150px;
+        order: 1;
+      }
       .desc-box {
         position: relative;
         width: 100%;
@@ -397,6 +411,13 @@ $font3: "Pacifico", cursive;
           font-size: 50px;
           text-transform: uppercase;
           padding: 20px 0px;
+          @media screen and (max-width: 1200px) {
+            font-size: 35px;
+          }
+          @media screen and (max-width: 1000px) {
+            font-size: 25px;
+            padding: 10px 0px;
+          }
         }
         p {
           color: white;
@@ -404,6 +425,13 @@ $font3: "Pacifico", cursive;
           padding: 0px 80px;
           font-size: 20px;
           font-family: $font2;
+          @media screen and (max-width: 1200px) {
+            font-size: 15px;
+          }
+          @media screen and (max-width: 1000px) {
+            font-size: 10px;
+            padding: 0px 5px;
+          }
         }
       }
     }
@@ -411,10 +439,14 @@ $font3: "Pacifico", cursive;
     .col-3 {
       position: relative;
       height: 100%;
+      width: 100%;
       background: none;
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: 1200px) {
+        height: 200px;
+      }
     }
   }
 }

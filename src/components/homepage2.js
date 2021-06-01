@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/home/landingpage.css";
+
 import drip1 from "../assets/drip1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,7 +27,7 @@ function Homepage2(props) {
           </h1>
         </div>
         <Row className="homepage-2-row">
-          <Col xl={7} md={12} className="col-1">
+          <Col xl={7} md={12} sm={12} xs={12} className="col-1">
             <div
               className="desc-box"
               data-aos="fade-right"
@@ -40,6 +41,8 @@ function Homepage2(props) {
           <Col
             xl={5}
             md={12}
+            sm={12}
+            xs={12}
             className="col-2"
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -51,13 +54,15 @@ function Homepage2(props) {
           <Col
             xl={5}
             md={12}
+            sm={12}
+            xs={12}
             className="col-3"
             data-aos="fade-right"
             data-aos-duration="1500"
           >
             {props.svg2}
           </Col>
-          <Col xl={7} md={12} className="col-4">
+          <Col xl={7} md={12} sm={12} xs={12} className="col-4">
             <div
               className="desc-box"
               data-aos="fade-left"

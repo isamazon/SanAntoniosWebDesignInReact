@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .container-fld {
   position: relative;
   height: 100vh;
@@ -52,8 +55,18 @@
   background: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .container-fld .review-row .col-1 .review-text {
+    width: 100%;
+  }
+}
+
 .container-fld .review-row .col-1 .review-text h1 {
+  position: relative;
   color: white;
+  width: 100%;
+  background: none;
+  text-align: center;
 }
 
 .container-fld .review-row .col-1 .review-text h1 span {
@@ -64,6 +77,12 @@
   color: white;
   text-align: center;
   padding: 0px 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-fld .review-row .col-1 .review-text p {
+    padding: 0px 20px;
+  }
 }
 
 .container-fld .review-row .review-col {
@@ -85,6 +104,12 @@
   height: 350px;
   width: 90%;
   background: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-fld .review-row .review-col .slider-2 {
+    width: 100%;
+  }
 }
 
 .container-fld .review-row .review-col .slider-2 .review-cnt {
@@ -112,5 +137,98 @@
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quote-box {
+  position: relative;
+  height: 40%;
+  width: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quote-box .sidebar {
+  position: relative;
+  height: 90%;
+  width: 20px;
+  left: 5%;
+  background: #2196f3;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quote-box p {
+  font-size: 20px;
+  padding: 0px 50px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quote-box p {
+    font-size: 10px;
+  }
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box .profile-pic {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  padding-left: 50px;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box .quoter-info {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  right: 0%;
+  background: noen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box .quoter-info .name {
+  position: relative;
+  color: #2196f3;
+}
+
+.container-fld .review-row .review-col .slider-2 .review-cnt .inner-cnt .quoter-box .quoter-info .company-name {
+  position: relative;
+  bottom: 0;
 }
 /*# sourceMappingURL=review.css.map */
