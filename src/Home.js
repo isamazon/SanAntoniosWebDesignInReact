@@ -3,6 +3,7 @@ import Heropage from "./components/heropage";
 import Nav from "./components/navbar";
 import Homepage2 from "./components/homepage2";
 import Homepage3 from "./components/homepage3";
+import Mappage from "./components/mappage";
 import SVG from "./components/svgs/SVG";
 import { Slide, FullPage } from "react-full-page";
 function Home() {
@@ -48,6 +49,10 @@ function Home() {
         </Slide>
         <Slide>
           <Homepage3 />
+        </Slide>
+        {/* GOOGLE MAPS PAGE */}
+        <Slide>
+          <Mappage />
         </Slide>
       </FullPage>
     </div>
