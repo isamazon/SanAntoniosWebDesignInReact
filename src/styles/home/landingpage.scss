@@ -444,7 +444,9 @@ $font3: "Pacifico", cursive;
 .circle5,
 .circle6,
 .circle7,
-.circle8 {
+.circle8,
+.circle9,
+.circle10 {
   position: absolute;
   border-radius: 50%;
   transform-origin: center;
@@ -486,10 +488,10 @@ $font3: "Pacifico", cursive;
   animation: wheel 5s infinite linear;
 }
 .circle4 {
-  bottom: 25%;
+  bottom: 45%;
   right: 60%;
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
 
   filter: blur(10px);
   background: rgb(14, 101, 151);
@@ -498,7 +500,7 @@ $font3: "Pacifico", cursive;
     rgba(54, 180, 253, 0.925) 0%,
     rgb(2, 2, 105) 100%
   );
-  animation: wheel 10s infinite linear;
+  animation: wheel 5s infinite linear;
 }
 .circle5 {
   bottom: 25%;
@@ -548,8 +550,8 @@ $font3: "Pacifico", cursive;
 .circle8 {
   bottom: -50%;
   left: -10%;
-  height: 1200px;
-  width: 1200px;
+  height: 1000px;
+  width: 1000px;
   filter: blur(10px);
   background: rgb(0, 162, 255);
   background: linear-gradient(
@@ -557,7 +559,36 @@ $font3: "Pacifico", cursive;
     rgba(0, 128, 202, 0.925) 0%,
     rgb(56, 56, 212) 100%
   );
-  animation: wheel 6s infinite linear;
+  animation: wheel 12s infinite linear;
+}
+.circle9 {
+  top: -50%;
+  left: -10%;
+  height: 1000px;
+  width: 1000px;
+  filter: blur(10px);
+  background: rgb(0, 162, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 128, 202, 0.925) 0%,
+    rgb(56, 56, 212) 100%
+  );
+  animation: wheel 12s infinite linear;
+}
+.circle10 {
+  bottom: -75%;
+  right: 40%;
+  height: 1000px;
+  width: 1000px;
+
+  filter: blur(10px);
+  background: rgb(14, 101, 151);
+  background: linear-gradient(
+    133deg,
+    rgba(54, 180, 253, 0.925) 0%,
+    rgb(2, 2, 105) 100%
+  );
+  animation: wheel 10s infinite linear;
 }
 
 // Hosting

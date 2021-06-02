@@ -4,10 +4,12 @@ import "../styles/home/review.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Reviewcarousel from "./reviewcarousel";
-function Homepage3() {
+function Homepage3(props) {
   return (
     <div>
       <Container fluid className="container-fld">
+        <div className={props.circle3}></div>
+        <div className={props.circle4}></div>
         <Row className="review-row">
           <Col lg={12} md={12} sm={12} xs={12} className="col-1">
             <div className="review-text">

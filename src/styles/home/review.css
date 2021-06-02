@@ -12,6 +12,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container-fld .review-row {

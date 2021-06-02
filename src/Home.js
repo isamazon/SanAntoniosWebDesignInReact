@@ -3,6 +3,7 @@ import Heropage from "./components/heropage";
 import Nav from "./components/navbar";
 import Homepage2 from "./components/homepage2";
 import Homepage3 from "./components/homepage3";
+import Finance from "./components/finance";
 import Mappage from "./components/mappage";
 import SVG from "./components/svgs/SVG";
 import { Slide, FullPage } from "react-full-page";
@@ -31,6 +32,7 @@ function Home() {
           <Homepage2
             circle1="circle3"
             circle2="circle4"
+            circle3="circle10"
             svg1={SVG.Design}
             svg2={SVG.Appdev}
             firstserviceh1="Web design"
@@ -50,6 +52,12 @@ function Home() {
             firstservicep="Does your website need changes often but you just can't figure out how to do it yourself, or you just don't have time? Don't worry, we have affordable monthly maintenence plans so you can get site updates every month."
             secondservicep="We're the most Affordable Web Design, App Development, and Marketing Company yet. We have partnered with Zip money, funding hero, and Paypal to offer you many different Affordable payment options so your business can strive no matter how big or small."
           />
+        </Slide>
+        <Slide>
+          <Homepage3 circle3="circle8" circle4="circle7" />
+        </Slide>
+        <Slide>
+          <Finance circle1="circle9" circle2="circle6" />
         </Slide>
 
         {/* GOOGLE MAPS PAGE */}

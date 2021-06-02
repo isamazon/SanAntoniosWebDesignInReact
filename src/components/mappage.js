@@ -27,7 +27,7 @@ function Mappage(props) {
             dolor, vel earum inventore quod.
           </p>
         </Row>
-        <Row className="map-row">
+        <Row className="map-row" data-aos="flip-up" data-aos-duration="2000">
           <Googlemap />
         </Row>
       </Container>
